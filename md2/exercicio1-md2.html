@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <title>Exercício 01</title>
+        <meta charset="utf-8">
+
+        <style type="text/css">
+            .btn {
+                width: 100px;
+                height: 100px;
+                border-radius: 10%;
+                position: absolute;
+            }
+        </style>
+    </head>
+
+    <body id="corpo">
+        <button class="btn">Adicionar Caixa</button>
+        <script>
+           btnElement = document.querySelector('button.btn');
+
+           btnElement.onclick =  function() {
+                var containerElement = document.querySelector('#corpo');
+                var divElement = document.createElement('div');
+                
+                divElement.setAttribute('title','Quadrado');
+                containerElement.appendChild(divElement);
+
+                divElement.style.width = '100px';
+                divElement.style.height = '100px';
+                divElement.style.backgroundColor = 'red';
+                divElement.style.marginLeft = '110px';
+                divElement.style.position = 'relative';
+                divElement.style.display = 'inline-block';
+            };
+        </script>
+    </body>
+</html>

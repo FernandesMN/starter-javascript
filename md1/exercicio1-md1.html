@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <title>Exercício 01</title>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <script>
+            function displayAddress(ad) {
+                return `O usuário mora em ${ad.city} / ${ad.uf}, no bairro ${ad.neighborhood}, na rua "${ad.street}" com n° ${ad.number}.`
+            };
+          
+            var address = {
+                street: "Rua dos pinheiros",
+                number: 1923,
+                neighborhood: "Centro",
+                city: "São Paulo",
+                uf: "SP"
+            };
+
+            console.log(displayAddress(address));
+        </script>
+    </body>
+</html>

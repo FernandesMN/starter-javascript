@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <title>Exercicio 05</title>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <script>
+            function display(u) {
+                let text;
+                for (let value of u) {
+                    text = `O ${value.name} possui as habilidades: ${value.skills.join(', ')}`;
+                    console.log(text);
+                }
+            }
+
+            var users = [
+                {
+                    name: 'Diego',
+                    skills: ['Javascript','ReactJS','React Native']
+                },
+            
+                {
+                    name: 'Gabriel',
+                    skills: ['VueJS','Ruby on Rails','Elixir']
+                }
+            ]
+
+            display(users);
+        </script>
+    </body>
+</html>

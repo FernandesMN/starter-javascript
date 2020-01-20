@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <title>Exercicio 04</title>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <script>
+            function experience(a) {
+                if ( a >= 0) {
+                    switch(a) {
+                        case 0: case 1: 
+                            return 'Iniciante';
+                        case 2: case 3: 
+                            return 'Intermediário';
+                        case 4: case 5: case 6: 
+                            return 'Avançado';
+                        default: 
+                            return 'Jedi Master';
+                    }
+                }
+
+                return 'Número inválido';
+            };
+
+            var yearsStudy = 9;
+            console.log(experience(yearsStudy));
+        </script>
+    </body>
+</html>
